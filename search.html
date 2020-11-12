@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnXfWPTro1VSebPvXVZUyyEdP6-vm9r_8&callback=initMap&libraries=&v=weekly"
+    defer
+    ></script>
+    <script src="./index.js"></script>
+    <script src="https://kit.fontawesome.com/84d4e0b2a8.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Ticketapp - map search</title>
+</head>
+<body>
+    <section class="page-search">
+        <div class="search-bar">
+            <button class="search-bar__submit" aria-label="submit__search"><i class="fas fa-search"></i></button>
+            <input type="text" class="search-bar__input" placeholder="Event name, artist, place" aria-label="search">
+        </div>
+    </section>
+    <section class="search-map">
+        <div id="map"></div>
+        <section class="search-map__filters">
+                <div class="slider">
+                    <div class="slide-search" id="s-slide-1">
+                        <div class="text-discover">
+                        <a href="#">
+                        <i class="fas fa-map-marker-alt"></i>
+                        €40-90
+                        </a>
+                    </div>
+                    </div>
+                    <div class="slide-search" id="s-slide-2">
+                        <div class="text-discover">
+                        <a href="#">
+                        <i class="fas fa-music"></i>
+                        When
+                        </a>
+                        </div>
+                    </div>
+                    <div class="slide-search" id="s-slide-3">
+                        <div class="text-discover">
+                        <a href="#">
+                        <i class="fas fa-podcast"></i>
+                        Category
+                    </a>
+                    </div>
+                    <!-- <div class="slide-search" id="s-slide-4">
+                        <div class="text-discover">
+                        <a href="#">
+                        <i class="fas fa-podcast"></i>
+                        Location
+                    </a>
+                    </div> -->
+                    </div>
+                  </div>
+        </section>
+    </section>
+    <nav class="nav_bottom nav_bottom__search">
+        <li><a href="/index.html"><i class="fas fa-home"></i></a></li>
+        <li><a href="/search.html"><i class="fas fa-search active"></i></a></li>
+        <li><a href="#"><i class="fas fa-ticket-alt"></i></a></li>
+        <li><a href="#"><i class="fas fa-id-badge"></i></a></li>
+    </nav>
+
+</body>
+</html>
